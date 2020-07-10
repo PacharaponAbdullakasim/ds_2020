@@ -8,7 +8,7 @@ public class IntArraySortingApp {
 		long avg = 0;
 		
 		for(int count=0; count < maxCount; count++) {
-			int size = 3000;
+			int size = 1000;
 			IntArrayBubbleSort bubbleSort = new IntArrayBubbleSort(size);
 
 			for (int i = 0; i < size; i++) {
