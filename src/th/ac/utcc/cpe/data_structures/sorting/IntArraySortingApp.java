@@ -8,15 +8,15 @@ public class IntArraySortingApp {
 		long avg = 0;
 		
 		for(int count=0; count < maxCount; count++) {
-			int size = 1000;
-			IntArrayBubbleSort bubbleSort = new IntArrayBubbleSort(size);
+			int size = 5000;
+			IntArrayInsertionSort sort = new IntArrayInsertionSort(size);
 
 			for (int i = 0; i < size; i++) {
-				bubbleSort.insert((int) (size * Math.random()));
+				sort.insert((int) (size * Math.random()));
 			}
 
 			long start = System.nanoTime();
-			bubbleSort.sort();
+			sort.sort();
 			long end = System.nanoTime();
 			long elapse = end - start;
 			
